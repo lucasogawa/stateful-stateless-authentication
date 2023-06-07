@@ -13,11 +13,11 @@ spring:
     platform: postgresql
     maxActive: 3
 
-    jpa:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      format_sql: true
+    show_sql: false
+    properties:
       hibernate:
-        ddl-auto: create-drop
-        format_sql: true
-      show_sql: false
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQL9Dialect
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect

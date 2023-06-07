@@ -1,2 +1,6 @@
 server:
-  port: ${PORT:8081}
+  port: ${PORT}
+
+app:
+  token:
+    secret-key: ${JWT_SECRET_KEY}

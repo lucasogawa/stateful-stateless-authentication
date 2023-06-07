@@ -48,6 +48,7 @@ services:
     networks:
       - auth
     environment:
+      - JWT_SECRET_KEY=c3RhdGVmdWwtc3RhdGVsZXNzLWF1dGhlbnRpY2F0aW9u
       - PORT=8080
       - DB_HOST=stateless-auth-db
       - DB_NAME=auth-db
@@ -68,6 +69,7 @@ services:
     networks:
       - auth
     environment:
+      - JWT_SECRET_KEY=c3RhdGVmdWwtc3RhdGVsZXNzLWF1dGhlbnRpY2F0aW9u
       - PORT=8081
     ports:
       - 8081:8081
