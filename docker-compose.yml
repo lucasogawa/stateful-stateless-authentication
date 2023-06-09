@@ -108,6 +108,7 @@ services:
       - auth
     environment:
       - PORT=8083
+      - STATEFUL_AUTH_BASE_URL=http://stateful-auth-api:8082
     ports:
       - 8083:8083
 
